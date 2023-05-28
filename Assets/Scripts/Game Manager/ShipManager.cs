@@ -20,7 +20,7 @@ public class ShipManager : MonoBehaviour
             if (player.Owner != photonView.Owner)
             {
                 Cannonball.applyDamage(damage);
-                player.RPC("TakeDamage", RpcTarget.Others, damage);
+                player.RPC("TakeDamage", RpcTarget.Others, damage);//return all viewers(only UI)
             }
         }
     }
