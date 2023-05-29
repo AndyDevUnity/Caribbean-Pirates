@@ -29,7 +29,7 @@ public class SoundController : MonoBehaviour
     {
         if (_soundOn)
             PlayerPrefs.SetInt("sound", 0);
-        if (_soundOn)
+        if (!_soundOn)
             PlayerPrefs.SetInt("sound", 1);
     }
 }
