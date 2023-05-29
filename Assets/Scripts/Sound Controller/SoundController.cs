@@ -27,7 +27,7 @@ public class SoundController : MonoBehaviour
 
     public void OffSound()
     {
-        if (!_soundOn)
+        if (_soundOn)
             PlayerPrefs.SetInt("sound", 0);
         if (_soundOn)
             PlayerPrefs.SetInt("sound", 1);
