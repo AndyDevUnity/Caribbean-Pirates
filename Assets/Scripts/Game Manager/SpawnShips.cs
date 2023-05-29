@@ -19,7 +19,7 @@ public class SpawnShips : MonoBehaviour
         if (_wallet._coin >= _birdShipPrice)
         {
             SetSpawnPosition(_ships[0].name, _spawnPlaces[0].position, Quaternion.Euler(0f, -90f, 0f));
-            _wallet.Decrease—oinCount(_birdShipPrice);
+            _wallet.Decrease√ëoinCount(_birdShipPrice);
         }
         else
             StartCoroutine(_playerUI.PurchaseInfo(_birdShipPrice - _wallet._coin));
@@ -30,7 +30,7 @@ public class SpawnShips : MonoBehaviour
         if (_wallet._coin >= _speedShipPrice)
         {
             SetSpawnPosition(_ships[1].name, _spawnPlaces[1].position, Quaternion.Euler(0f, -90f, 0f));
-            _wallet.Decrease—oinCount(_speedShipPrice);
+            _wallet.Decrease√ëoinCount(_speedShipPrice);
         }
         else
             StartCoroutine(_playerUI.PurchaseInfo(_speedShipPrice - _wallet._coin));
@@ -41,7 +41,7 @@ public class SpawnShips : MonoBehaviour
         if (_wallet._coin >= _colonianShipPrice)
         {
             SetSpawnPosition(_ships[2].name, _spawnPlaces[2].position, Quaternion.Euler(0f, 180f, 0f));
-            _wallet.Decrease—oinCount(_pirateShipPrice);
+            _wallet.Decrease√ëoinCount(_colonianShipPrice);
         }
         else
             StartCoroutine(_playerUI.PurchaseInfo(_colonianShipPrice - _wallet._coin));
@@ -52,7 +52,7 @@ public class SpawnShips : MonoBehaviour
         if (_wallet._coin >= _pirateBoatPrice)
         {
             SetSpawnPosition(_ships[3].name, _spawnPlaces[3].position, Quaternion.Euler(0f, 90f, 0f));
-            _wallet.Decrease—oinCount(_pirateShipPrice);
+            _wallet.Decrease√ëoinCount(_pirateBoatPrice);
         }
         else
             StartCoroutine(_playerUI.PurchaseInfo(_pirateBoatPrice - _wallet._coin));
@@ -63,7 +63,7 @@ public class SpawnShips : MonoBehaviour
         if (_wallet._coin >= _pirateShipPrice)
         {
             SetSpawnPosition(_ships[4].name, _spawnPlaces[4].position, Quaternion.identity);
-            _wallet.Decrease—oinCount(_pirateShipPrice);
+            _wallet.Decrease√ëoinCount(_pirateShipPrice);
         }
         else
             StartCoroutine(_playerUI.PurchaseInfo(_pirateShipPrice - _wallet._coin));
